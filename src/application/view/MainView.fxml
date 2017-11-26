@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MainViewController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutY="50.0" prefHeight="350.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TreeView fx:id="GroupsTree" prefHeight="348.0" prefWidth="235.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="348.0" prefWidth="467.0">
+               <children>
+                  <TableView fx:id="TableTime" prefHeight="348.0" prefWidth="557.0">
+                    <columns>
+                      	<TableColumn fx:id="NumberLesson" prefWidth="85.0" text="Урок" />
+                        <TableColumn fx:id="NumberAuditory" prefWidth="78.0" text="Кабинет" />
+                      	<TableColumn fx:id="Subject" prefWidth="134.0" text="Предмет" />
+                        <TableColumn fx:id="Teacher" prefWidth="171.0" text="Преподаватель" />
+                        <TableColumn fx:id="Separation" prefWidth="88.0" text="Разделение" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="InfoText" alignment="CENTER" contentDisplay="CENTER" layoutX="208.0" layoutY="161.0" text="Выберите группу" textAlignment="CENTER" textFill="#797979" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <DatePicker fx:id="DatePicker" layoutX="612.0" layoutY="14.0" />
+      <Label layoutX="519.0" layoutY="18.0" text="Выберите дату" />
+      <HBox fx:id = "HboxButton" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="326.0" spacing="20.0">
+         <children>
+            <Button fx:id="AddLesson" mnemonicParsing="false" text="Добавить урок" />
+            <Button fx:id="ChangeLesson" mnemonicParsing="false" text="Изменить урок" />
+            <Button fx:id="RemoveLesson" mnemonicParsing="false" text="Удалить урок" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

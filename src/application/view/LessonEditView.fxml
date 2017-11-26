@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="330.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.LessonEditViewController">
+   <children>
+      <ComboBox fx:id="NumberLesson" layoutX="14.0" layoutY="34.0" prefHeight="25.0" prefWidth="275.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Номер урока" />
+      <Label layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="73.0" text="Предмет" AnchorPane.topAnchor="67.0" />
+      <ComboBox fx:id="Subject" layoutX="14.0" layoutY="84.0" prefHeight="25.0" prefWidth="275.0" />
+      <ComboBox fx:id="Teacher" layoutX="14.0" layoutY="133.0" prefHeight="25.0" prefWidth="275.0" />
+      <Label layoutX="14.0" layoutY="116.0" prefHeight="17.0" prefWidth="96.0" text="Преподаватель" />
+      <Label layoutX="14.0" layoutY="166.0" prefHeight="17.0" prefWidth="96.0" text="Разделение" />
+      <ComboBox fx:id="Separation" layoutX="14.0" layoutY="183.0" prefHeight="25.0" prefWidth="275.0" />
+      <Label layoutX="14.0" layoutY="215.0" prefHeight="17.0" prefWidth="96.0" text="Аудитория" />
+      <ComboBox fx:id="Auditory" layoutX="14.0" layoutY="233.0" prefHeight="25.0" prefWidth="275.0" />
+      <Button fx:id="Button" layoutX="190.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Добавить" />
+   </children>
+</AnchorPane>
